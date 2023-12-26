@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gmail</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid p-0">
+    <div class="gmail d-flex">
+      <div class="side-bar">
+        <div class="header d-flex align-items-center gap-3 ps-2 pt-3">
+          <span class="material-symbols-outlined text-white ps-3">
+            menu
+          </span>
+          <img src="img/gmail_logo.png" alt="">
+        </div>
+        <a class="text-white link-underline link-underline-opacity-0" href="#">
+          <span
+            class="compose border-white text-secondary bg-white d-inline-flex justify-content-center gap-3 p-3 pe-4 mt-3 rounded-4 ms-2">
+            <span class="material-symbols-outlined">
+              edit
+            </span>
+            <span>compose</span>
+          </span>
+        </a>
+        <ul class="text-white fw-bold pt-2 me-3 list-group-item">
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                inbox
+              </span>
+              <span>Index</span>
+              <span class="ms-auto f-12">1985</span>
+            </a>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                star
+              </span>
+              <span>Starred</span>
+            </a>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                schedule
+              </span>
+              <span>Schedule</span>
+            </a>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                label_important
+              </span>
+              <span>Important</span>
+            </a>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                send
+              </span>
+              <span>Send</span>
+            </a>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                draft
+              </span>
+              <span>Drafts</span>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown pt-2 ps-2 rounded-end-5">
+            <a class="nav-link d-flex align-items-center" href="#" role="button" onclick="toggle('categories', 'block')"
+              aria-expanded="false">
+              <span class="material-symbols-outlined fs-6">
+                arrow_right
+              </span>
+              <span class="material-symbols-outlined fs-5 me-3">
+                label
+              </span>
+              <span>Categories</span>
+            </a>
+            <ul class=" bg-transparent text-white list-group-item" id="categories" style="display: none;">
+              <li class="pt-2 ps-4 rounded-end-5">
+                <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+                  <span class="material-symbols-outlined fs-5 me-3">
+                    inbox
+                  </span>
+                  <span>Index</span>
+                  <span class="m f-12 f-12">1985</span>
+                </a>
+              </li>
+              <li class="pt-2 ps-4 rounded-end-5">
+                <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+                  <span class="material-symbols-outlined fs-5 me-3">
+                    inbox
+                  </span>
+                  <span>Index</span>
+                  <span class="ms-auto f-12">1985</span>
+                </a>
+              </li>
+              <li class="pt-2 ps-4 rounded-end-5">
+                <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+                  <span class="material-symbols-outlined fs-5 me-3">
+                    inbox
+                  </span>
+                  <span>Index</span>
+                  <span class="ms-auto f-12">1985</span>
+                </a>
+              </li>
+              <li class="pt-2 ps-4 rounded-end-5">
+                <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+                  <span class="material-symbols-outlined fs-5 me-3">
+                    inbox
+                  </span>
+                  <span>Index</span>
+                  <span class="ms-auto f-12">1985</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="pt-2 ps-4 rounded-end-5">
+            <a class="text-white link-underline link-underline-opacity-0 f-14 d-flex align-items-center" href="#">
+              <span class="material-symbols-outlined fs-5 me-3">
+                expand_more
+              </span>
+              <span>More</span>
+            </a>
+
+          <li class="pt-4">
+            <a class="text-white link-underline link-underline-opacity-0 ps-4 d-flex align-items-center justify-content-between"
+              href="#">
+              <span>Labels</span>
+              <span class="material-symbols-outlined fs-5">
+                add
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="aside">
+        <div class="nav-bar d-flex align-items-center justify-content-between mt-2 gap-5">
+          <div class="search-bar d-flex align-items-center text-white rounded-5 p-1 pt-0">
+            <a class="text-white link-underline link-underline-opacity-0 material-symbols-outlined px-2 " href="#">
+              search
+            </a>
+            <input class=" border-0 bg-transparent" type="text" placeholder="Search mail">
+            <a class="text-white link-underline link-underline-opacity-0 material-symbols-outlined" href="#">
+              tune
+            </a>
+          </div>
+          <div class="side-nav text-white d-flex align-items-center gap-4">
+            <a class="text-white link-underline link-underline-opacity-0" href="#">
+              <span class="material-symbols-outlined">
+                help
+              </span>
+            </a>
+            <a class="text-white link-underline link-underline-opacity-0" href="#">
+              <span class="material-symbols-outlined">
+                settings
+              </span>
+            </a>
+            <a class="text-white link-underline link-underline-opacity-0" href="#">
+              <span class="material-symbols-outlined">
+                apps
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="main-content rounded-4 mt-2 f-12">
+          <div class="mx-3">
+            <a class="text-secondary link-underline link-underline-opacity-0 rounded-1 py-2 pb-1 bg-body" href="#">
+              <span class="material-symbols-outlined fs-5 mt-1 pt-2">
+                check_box_outline_blankarrow_drop_down
+              </span>
+            </a>
+            <a class="text-secondary link-underline link-underline-opacity-0 material-symbols-outlined fs-5 ms-3"
+              href="#">
+              refresh
+            </a>
+            <a class="text-secondary link-underline link-underline-opacity-0 material-symbols-outlined fs-5 ms-3"
+              href="#">
+              more_vert
+            </div>
+          </a>
+          <div class="f-12">
+            <a class="text-secondary link-underline link-underline-opacity-0 f-12" href="#">
+              saurabh
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
