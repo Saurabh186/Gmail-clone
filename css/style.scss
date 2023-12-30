@@ -44,8 +44,9 @@
     .nav-bar {
       width: calc(100% - 248px);
       .search-bar {
-        width: calc(100% - 565px);
+        width: 100%;
         min-width: 300px;
+        max-width: 580px;
         height: 48px;
         background-color: rgba(255, 255, 255, 0.164);
         .options {
