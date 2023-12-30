@@ -1,0 +1,17 @@
+.f-14 {
+  font-size: var(--font-size-14);
+}
+.f-12 {
+  font-size: var(--font-size-12);
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+
+  accent-color: var(--background-hover-color);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

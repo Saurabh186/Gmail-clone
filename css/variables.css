@@ -1,7 +1,13 @@
  :root {
    --text-color-white: #ffffff;
 
+   --text-color-blue: #0b57d0;
+
    --background-color: #ffffff;
+
+   --background-hover-color:#ffffff43;  
+
+   --background-hover-color-black:#38383817;
 
 
    --font-size-14: 14px;
